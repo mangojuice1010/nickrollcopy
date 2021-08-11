@@ -173,18 +173,19 @@ async def on_message(message):
             else:
                 totalSec = endTime - startTime
 
-            #print(totalSec) test line for calculation
+            # print(totalSec) test line for calculation
             praccHr =  totalSec // 3600
             praccMin = (totalSec % 3600) // 60
             praccSec = (totalSec % 3600) % 60
 
             praccTotal = str(praccHr) + ' hr, ' + str(praccMin) + ' min, and ' + str(praccSec) + ' sec of pracc'
 
-            #embed final practice time message and info
+            # embed final practice time message and info
             embed = discord.Embed(title= 'Never gonna give you up...', color=discord.Color.blue(), description = '...oof I gtg after ' + praccTotal + " :tea:")
             embed.set_image(url="https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif")
             await message.channel.send(embed=embed)
-
+            
+            # resets global variables for next practice session
             if 'startPauseTime' in globals():
                 del globals()['startPauseTime']
             if 'start' in globals():
