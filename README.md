@@ -7,9 +7,9 @@ Nickroll is a Python library for counting practice time in the private HCLC Disc
 
 ## Usage
 
-$help - returns practice and stop commands using
+$help - returns practice and stop commands
 
-$practice - returns acknowledgment of timer start using
+$practice - returns acknowledgment of timer start
 
 $pause - pauses timer during practice
 
@@ -17,19 +17,14 @@ $resume - resumes timer during practice
 
 $time - counts total practice time of current session
 
-$stop - returns timer end, total practice time of session (minus any pauses), and rickroll gif
+$stop - returns timer end and total practice time of session (minus any pauses)
 
 @Nickroll - returns description of possible commands
 
 ## Contributing
 For major changes, please open an issue first to discuss what you would like to change.
 
-Future changes to consider:
--Array of rng emoji reactions
--Total practice time from each member stored in individual profiles, rather than just individual practice sessions
--Check if user is in voice channel before starting timer (currently allows offline practice)
--Streamlining code with separately implemented Timer class
--Sending error messages during exceptions (currently bot is designed to only respond to appropriate use of commands while simply ignoring illogical series of events (such as $pause when $practice has not been called, or $resume when $pause has not been called)
+Future changes to consider: Array of rng emoji reactions; Total practice time from each member stored in individual profiles, rather than just individual practice sessions; Check if user is in voice channel before starting timer (currently allows offline practice); Streamlining code with separately implemented Timer class; Sending error messages during exceptions (currently bot is designed to only respond to appropriate use of commands while simply ignoring illogical series of events (such as $pause when $practice has not been called, or $resume when $pause has not been called)
 
 ## Contributors
 
